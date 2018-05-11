@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Smart_SchedulerModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="Smart_SchedulerEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="branchIDs" EntityType="Smart_SchedulerModel.branchID" />
+    <EntitySet Name="holidayinformations" EntityType="Smart_SchedulerModel.holidayinformation" />
+    <EntitySet Name="notesinformations" EntityType="Smart_SchedulerModel.notesinformation" />
+    <EntitySet Name="noticeinformations" EntityType="Smart_SchedulerModel.noticeinformation" />
+    <EntitySet Name="placementinformations" EntityType="Smart_SchedulerModel.placementinformation" />
+    <EntitySet Name="profileinformations" EntityType="Smart_SchedulerModel.profileinformation" />
+    <EntitySet Name="resultinformations" EntityType="Smart_SchedulerModel.resultinformation" />
+    <EntitySet Name="subjectinformations" EntityType="Smart_SchedulerModel.subjectinformation" />
+    <EntitySet Name="timetableinformations" EntityType="Smart_SchedulerModel.timetableinformation" />
+  </EntityContainer>
+  <EntityType Name="branchID">
+    <Key>
+      <PropertyRef Name="rowid" />
+    </Key>
+    <Property Name="rowid" Type="Int32" Nullable="false" />
+    <Property Name="bname" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="id" Type="String" Nullable="false" MaxLength="3" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="holidayinformation">
+    <Key>
+      <PropertyRef Name="serial" />
+    </Key>
+    <Property Name="serial" Type="Int32" Nullable="false" />
+    <Property Name="holiday" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="date" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="day" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="notesinformation">
+    <Key>
+      <PropertyRef Name="rowid" />
+    </Key>
+    <Property Name="rowid" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Enno" Type="String" Nullable="false" MaxLength="12" Unicode="false" FixedLength="false" />
+    <Property Name="Title" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="notes" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="date" Type="String" Nullable="false" MaxLength="15" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="noticeinformation">
+    <Key>
+      <PropertyRef Name="rowid" />
+    </Key>
+    <Property Name="rowid" Type="Int32" Nullable="false" />
+    <Property Name="Noticeid" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="SBid" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="noticetitle" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="noticedetails" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="date" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="placementinformation">
+    <Key>
+      <PropertyRef Name="rowid" />
+    </Key>
+    <Property Name="rowid" Type="Int32" Nullable="false" />
+    <Property Name="SBid" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="notes" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Placement_title" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="date" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="profileinformation">
+    <Key>
+      <PropertyRef Name="rowid" />
+    </Key>
+    <Property Name="rowid" Type="Int32" Nullable="false" />
+    <Property Name="Enno" Type="String" MaxLength="12" Unicode="false" FixedLength="false" />
+    <Property Name="name" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="semester" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="branch" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="mobile" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Emailid" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="password" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="resultinformation">
+    <Key>
+      <PropertyRef Name="rowid" />
+    </Key>
+    <Property Name="rowid" Type="Int32" Nullable="false" />
+    <Property Name="Enno" Type="String" Nullable="false" MaxLength="12" Unicode="false" FixedLength="false" />
+    <Property Name="SUBid" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="marks" Type="String" Nullable="false" MaxLength="3" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="subjectinformation">
+    <Key>
+      <PropertyRef Name="rowid" />
+    </Key>
+    <Property Name="rowid" Type="Int32" Nullable="false" />
+    <Property Name="SUBid" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="SBid" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="subject" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="syallabus" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="timetableinformation">
+    <Key>
+      <PropertyRef Name="rowid" />
+    </Key>
+    <Property Name="rowid" Type="Int32" Nullable="false" />
+    <Property Name="Tid" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Dayid" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="SUBid" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="time" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+  </EntityType>
+</Schema>

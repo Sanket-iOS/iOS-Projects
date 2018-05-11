@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Smart_SchedulerModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="Smart_SchedulerModelStoreContainer">
+          <EntitySet Name="branchID" EntityType="Smart_SchedulerModel.Store.branchID" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="holidayinformation" EntityType="Smart_SchedulerModel.Store.holidayinformation" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="notesinformation" EntityType="Smart_SchedulerModel.Store.notesinformation" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="noticeinformation" EntityType="Smart_SchedulerModel.Store.noticeinformation" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="placementinformation" EntityType="Smart_SchedulerModel.Store.placementinformation" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="profileinformation" EntityType="Smart_SchedulerModel.Store.profileinformation" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="resultinformation" EntityType="Smart_SchedulerModel.Store.resultinformation" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="subjectinformation" EntityType="Smart_SchedulerModel.Store.subjectinformation" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="timetableinformation" EntityType="Smart_SchedulerModel.Store.timetableinformation" store:Type="Tables" store:Schema="dbo" store:Name="timetableinformation">
+            <DefiningQuery>SELECT 
+      [timetableinformation].[rowid] AS [rowid], 
+      [timetableinformation].[Tid] AS [Tid], 
+      [timetableinformation].[Dayid] AS [Dayid], 
+      [timetableinformation].[SUBid] AS [SUBid], 
+      [timetableinformation].[time] AS [time]
+      FROM [dbo].[timetableinformation] AS [timetableinformation]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+        <EntityType Name="branchID">
+          <Key>
+            <PropertyRef Name="rowid" />
+          </Key>
+          <Property Name="rowid" Type="int" Nullable="false" />
+          <Property Name="bname" Type="varchar(max)" Nullable="false" />
+          <Property Name="id" Type="varchar" Nullable="false" MaxLength="3" />
+        </EntityType>
+        <EntityType Name="holidayinformation">
+          <Key>
+            <PropertyRef Name="serial" />
+          </Key>
+          <Property Name="serial" Type="int" Nullable="false" />
+          <Property Name="holiday" Type="varchar(max)" />
+          <Property Name="date" Type="varchar" MaxLength="15" />
+          <Property Name="day" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="notesinformation">
+          <Key>
+            <PropertyRef Name="rowid" />
+          </Key>
+          <Property Name="rowid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Enno" Type="varchar" Nullable="false" MaxLength="12" />
+          <Property Name="Title" Type="varchar(max)" />
+          <Property Name="notes" Type="varchar(max)" />
+          <Property Name="date" Type="varchar" Nullable="false" MaxLength="15" />
+        </EntityType>
+        <EntityType Name="noticeinformation">
+          <Key>
+            <PropertyRef Name="rowid" />
+          </Key>
+          <Property Name="rowid" Type="int" Nullable="false" />
+          <Property Name="Noticeid" Type="varchar(max)" />
+          <Property Name="SBid" Type="varchar(max)" />
+          <Property Name="noticetitle" Type="varchar(max)" />
+          <Property Name="noticedetails" Type="varchar(max)" />
+          <Property Name="date" Type="varchar" MaxLength="15" />
+        </EntityType>
+        <EntityType Name="placementinformation">
+          <Key>
+            <PropertyRef Name="rowid" />
+          </Key>
+          <Property Name="rowid" Type="int" Nullable="false" />
+          <Property Name="SBid" Type="varchar(max)" />
+          <Property Name="notes" Type="varchar(max)" />
+          <Property Name="Placement_title" Type="varchar(max)" />
+          <Property Name="date" Type="varchar" MaxLength="15" />
+        </EntityType>
+        <EntityType Name="profileinformation">
+          <Key>
+            <PropertyRef Name="rowid" />
+          </Key>
+          <Property Name="rowid" Type="int" Nullable="false" />
+          <Property Name="Enno" Type="varchar" MaxLength="12" />
+          <Property Name="name" Type="varchar(max)" />
+          <Property Name="semester" Type="varchar" MaxLength="2" />
+          <Property Name="branch" Type="varchar(max)" />
+          <Property Name="mobile" Type="varchar" MaxLength="10" />
+          <Property Name="Emailid" Type="varchar(max)" />
+          <Property Name="password" Type="varchar" MaxLength="15" />
+        </EntityType>
+        <EntityType Name="resultinformation">
+          <Key>
+            <PropertyRef Name="rowid" />
+          </Key>
+          <Property Name="rowid" Type="int" Nullable="false" />
+          <Property Name="Enno" Type="varchar" Nullable="false" MaxLength="12" />
+          <Property Name="SUBid" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="marks" Type="varchar" Nullable="false" MaxLength="3" />
+        </EntityType>
+        <EntityType Name="subjectinformation">
+          <Key>
+            <PropertyRef Name="rowid" />
+          </Key>
+          <Property Name="rowid" Type="int" Nullable="false" />
+          <Property Name="SUBid" Type="varchar" MaxLength="10" />
+          <Property Name="SBid" Type="varchar(max)" />
+          <Property Name="subject" Type="varchar(max)" />
+          <Property Name="syallabus" Type="varchar(max)" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'Smart_Scheduler.dbo.timetableinformation' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="timetableinformation">
+          <Key>
+            <PropertyRef Name="rowid" />
+          </Key>
+          <Property Name="rowid" Type="int" Nullable="false" />
+          <Property Name="Tid" Type="varchar(max)" />
+          <Property Name="Dayid" Type="varchar(max)" />
+          <Property Name="SUBid" Type="varchar" MaxLength="10" />
+          <Property Name="time" Type="varchar" MaxLength="15" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Smart_SchedulerModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="Smart_SchedulerEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="branchIDs" EntityType="Smart_SchedulerModel.branchID" />
+          <EntitySet Name="holidayinformations" EntityType="Smart_SchedulerModel.holidayinformation" />
+          <EntitySet Name="notesinformations" EntityType="Smart_SchedulerModel.notesinformation" />
+          <EntitySet Name="noticeinformations" EntityType="Smart_SchedulerModel.noticeinformation" />
+          <EntitySet Name="placementinformations" EntityType="Smart_SchedulerModel.placementinformation" />
+          <EntitySet Name="profileinformations" EntityType="Smart_SchedulerModel.profileinformation" />
+          <EntitySet Name="resultinformations" EntityType="Smart_SchedulerModel.resultinformation" />
+          <EntitySet Name="subjectinformations" EntityType="Smart_SchedulerModel.subjectinformation" />
+          <EntitySet Name="timetableinformations" EntityType="Smart_SchedulerModel.timetableinformation" />
+        </EntityContainer>
+        <EntityType Name="branchID">
+          <Key>
+            <PropertyRef Name="rowid" />
+          </Key>
+          <Property Name="rowid" Type="Int32" Nullable="false" />
+          <Property Name="bname" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="id" Type="String" Nullable="false" MaxLength="3" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="holidayinformation">
+          <Key>
+            <PropertyRef Name="serial" />
+          </Key>
+          <Property Name="serial" Type="Int32" Nullable="false" />
+          <Property Name="holiday" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="date" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="day" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="notesinformation">
+          <Key>
+            <PropertyRef Name="rowid" />
+          </Key>
+          <Property Name="rowid" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Enno" Type="String" Nullable="false" MaxLength="12" Unicode="false" FixedLength="false" />
+          <Property Name="Title" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="notes" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="date" Type="String" Nullable="false" MaxLength="15" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="noticeinformation">
+          <Key>
+            <PropertyRef Name="rowid" />
+          </Key>
+          <Property Name="rowid" Type="Int32" Nullable="false" />
+          <Property Name="Noticeid" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="SBid" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="noticetitle" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="noticedetails" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="date" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="placementinformation">
+          <Key>
+            <PropertyRef Name="rowid" />
+          </Key>
+          <Property Name="rowid" Type="Int32" Nullable="false" />
+          <Property Name="SBid" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="notes" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="Placement_title" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="date" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="profileinformation">
+          <Key>
+            <PropertyRef Name="rowid" />
+          </Key>
+          <Property Name="rowid" Type="Int32" Nullable="false" />
+          <Property Name="Enno" Type="String" MaxLength="12" Unicode="false" FixedLength="false" />
+          <Property Name="name" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="semester" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+          <Property Name="branch" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="mobile" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="Emailid" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="password" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="resultinformation">
+          <Key>
+            <PropertyRef Name="rowid" />
+          </Key>
+          <Property Name="rowid" Type="Int32" Nullable="false" />
+          <Property Name="Enno" Type="String" Nullable="false" MaxLength="12" Unicode="false" FixedLength="false" />
+          <Property Name="SUBid" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="marks" Type="String" Nullable="false" MaxLength="3" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="subjectinformation">
+          <Key>
+            <PropertyRef Name="rowid" />
+          </Key>
+          <Property Name="rowid" Type="Int32" Nullable="false" />
+          <Property Name="SUBid" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="SBid" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="subject" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="syallabus" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="timetableinformation">
+          <Key>
+            <PropertyRef Name="rowid" />
+          </Key>
+          <Property Name="rowid" Type="Int32" Nullable="false" />
+          <Property Name="Tid" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="Dayid" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="SUBid" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="time" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Smart_SchedulerModelStoreContainer" CdmEntityContainer="Smart_SchedulerEntities">
+          <EntitySetMapping Name="branchIDs">
+            <EntityTypeMapping TypeName="Smart_SchedulerModel.branchID">
+              <MappingFragment StoreEntitySet="branchID">
+                <ScalarProperty Name="rowid" ColumnName="rowid" />
+                <ScalarProperty Name="bname" ColumnName="bname" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="holidayinformations">
+            <EntityTypeMapping TypeName="Smart_SchedulerModel.holidayinformation">
+              <MappingFragment StoreEntitySet="holidayinformation">
+                <ScalarProperty Name="serial" ColumnName="serial" />
+                <ScalarProperty Name="holiday" ColumnName="holiday" />
+                <ScalarProperty Name="date" ColumnName="date" />
+                <ScalarProperty Name="day" ColumnName="day" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="notesinformations">
+            <EntityTypeMapping TypeName="Smart_SchedulerModel.notesinformation">
+              <MappingFragment StoreEntitySet="notesinformation">
+                <ScalarProperty Name="rowid" ColumnName="rowid" />
+                <ScalarProperty Name="Enno" ColumnName="Enno" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="notes" ColumnName="notes" />
+                <ScalarProperty Name="date" ColumnName="date" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="noticeinformations">
+            <EntityTypeMapping TypeName="Smart_SchedulerModel.noticeinformation">
+              <MappingFragment StoreEntitySet="noticeinformation">
+                <ScalarProperty Name="rowid" ColumnName="rowid" />
+                <ScalarProperty Name="Noticeid" ColumnName="Noticeid" />
+                <ScalarProperty Name="SBid" ColumnName="SBid" />
+                <ScalarProperty Name="noticetitle" ColumnName="noticetitle" />
+                <ScalarProperty Name="noticedetails" ColumnName="noticedetails" />
+                <ScalarProperty Name="date" ColumnName="date" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="placementinformations">
+            <EntityTypeMapping TypeName="Smart_SchedulerModel.placementinformation">
+              <MappingFragment StoreEntitySet="placementinformation">
+                <ScalarProperty Name="rowid" ColumnName="rowid" />
+                <ScalarProperty Name="SBid" ColumnName="SBid" />
+                <ScalarProperty Name="notes" ColumnName="notes" />
+                <ScalarProperty Name="Placement_title" ColumnName="Placement_title" />
+                <ScalarProperty Name="date" ColumnName="date" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="profileinformations">
+            <EntityTypeMapping TypeName="Smart_SchedulerModel.profileinformation">
+              <MappingFragment StoreEntitySet="profileinformation">
+                <ScalarProperty Name="rowid" ColumnName="rowid" />
+                <ScalarProperty Name="Enno" ColumnName="Enno" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="semester" ColumnName="semester" />
+                <ScalarProperty Name="branch" ColumnName="branch" />
+                <ScalarProperty Name="mobile" ColumnName="mobile" />
+                <ScalarProperty Name="Emailid" ColumnName="Emailid" />
+                <ScalarProperty Name="password" ColumnName="password" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="resultinformations">
+            <EntityTypeMapping TypeName="Smart_SchedulerModel.resultinformation">
+              <MappingFragment StoreEntitySet="resultinformation">
+                <ScalarProperty Name="rowid" ColumnName="rowid" />
+                <ScalarProperty Name="Enno" ColumnName="Enno" />
+                <ScalarProperty Name="SUBid" ColumnName="SUBid" />
+                <ScalarProperty Name="marks" ColumnName="marks" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="subjectinformations">
+            <EntityTypeMapping TypeName="Smart_SchedulerModel.subjectinformation">
+              <MappingFragment StoreEntitySet="subjectinformation">
+                <ScalarProperty Name="rowid" ColumnName="rowid" />
+                <ScalarProperty Name="SUBid" ColumnName="SUBid" />
+                <ScalarProperty Name="SBid" ColumnName="SBid" />
+                <ScalarProperty Name="subject" ColumnName="subject" />
+                <ScalarProperty Name="syallabus" ColumnName="syallabus" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="timetableinformations">
+            <EntityTypeMapping TypeName="Smart_SchedulerModel.timetableinformation">
+              <MappingFragment StoreEntitySet="timetableinformation">
+                <ScalarProperty Name="rowid" ColumnName="rowid" />
+                <ScalarProperty Name="Tid" ColumnName="Tid" />
+                <ScalarProperty Name="Dayid" ColumnName="Dayid" />
+                <ScalarProperty Name="SUBid" ColumnName="SUBid" />
+                <ScalarProperty Name="time" ColumnName="time" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

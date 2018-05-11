@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Smart_SchedulerModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="Smart_SchedulerModelStoreContainer">
+    <EntitySet Name="branchID" EntityType="Smart_SchedulerModel.Store.branchID" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="holidayinformation" EntityType="Smart_SchedulerModel.Store.holidayinformation" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="notesinformation" EntityType="Smart_SchedulerModel.Store.notesinformation" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="noticeinformation" EntityType="Smart_SchedulerModel.Store.noticeinformation" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="placementinformation" EntityType="Smart_SchedulerModel.Store.placementinformation" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="profileinformation" EntityType="Smart_SchedulerModel.Store.profileinformation" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="resultinformation" EntityType="Smart_SchedulerModel.Store.resultinformation" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="subjectinformation" EntityType="Smart_SchedulerModel.Store.subjectinformation" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="timetableinformation" EntityType="Smart_SchedulerModel.Store.timetableinformation" store:Type="Tables" store:Schema="dbo" store:Name="timetableinformation">
+      <DefiningQuery>SELECT 
+      [timetableinformation].[rowid] AS [rowid], 
+      [timetableinformation].[Tid] AS [Tid], 
+      [timetableinformation].[Dayid] AS [Dayid], 
+      [timetableinformation].[SUBid] AS [SUBid], 
+      [timetableinformation].[time] AS [time]
+      FROM [dbo].[timetableinformation] AS [timetableinformation]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+  <EntityType Name="branchID">
+    <Key>
+      <PropertyRef Name="rowid" />
+    </Key>
+    <Property Name="rowid" Type="int" Nullable="false" />
+    <Property Name="bname" Type="varchar(max)" Nullable="false" />
+    <Property Name="id" Type="varchar" Nullable="false" MaxLength="3" />
+  </EntityType>
+  <EntityType Name="holidayinformation">
+    <Key>
+      <PropertyRef Name="serial" />
+    </Key>
+    <Property Name="serial" Type="int" Nullable="false" />
+    <Property Name="holiday" Type="varchar(max)" />
+    <Property Name="date" Type="varchar" MaxLength="15" />
+    <Property Name="day" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="notesinformation">
+    <Key>
+      <PropertyRef Name="rowid" />
+    </Key>
+    <Property Name="rowid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Enno" Type="varchar" Nullable="false" MaxLength="12" />
+    <Property Name="Title" Type="varchar(max)" />
+    <Property Name="notes" Type="varchar(max)" />
+    <Property Name="date" Type="varchar" Nullable="false" MaxLength="15" />
+  </EntityType>
+  <EntityType Name="noticeinformation">
+    <Key>
+      <PropertyRef Name="rowid" />
+    </Key>
+    <Property Name="rowid" Type="int" Nullable="false" />
+    <Property Name="Noticeid" Type="varchar(max)" />
+    <Property Name="SBid" Type="varchar(max)" />
+    <Property Name="noticetitle" Type="varchar(max)" />
+    <Property Name="noticedetails" Type="varchar(max)" />
+    <Property Name="date" Type="varchar" MaxLength="15" />
+  </EntityType>
+  <EntityType Name="placementinformation">
+    <Key>
+      <PropertyRef Name="rowid" />
+    </Key>
+    <Property Name="rowid" Type="int" Nullable="false" />
+    <Property Name="SBid" Type="varchar(max)" />
+    <Property Name="notes" Type="varchar(max)" />
+    <Property Name="Placement_title" Type="varchar(max)" />
+    <Property Name="date" Type="varchar" MaxLength="15" />
+  </EntityType>
+  <EntityType Name="profileinformation">
+    <Key>
+      <PropertyRef Name="rowid" />
+    </Key>
+    <Property Name="rowid" Type="int" Nullable="false" />
+    <Property Name="Enno" Type="varchar" MaxLength="12" />
+    <Property Name="name" Type="varchar(max)" />
+    <Property Name="semester" Type="varchar" MaxLength="2" />
+    <Property Name="branch" Type="varchar(max)" />
+    <Property Name="mobile" Type="varchar" MaxLength="10" />
+    <Property Name="Emailid" Type="varchar(max)" />
+    <Property Name="password" Type="varchar" MaxLength="15" />
+  </EntityType>
+  <EntityType Name="resultinformation">
+    <Key>
+      <PropertyRef Name="rowid" />
+    </Key>
+    <Property Name="rowid" Type="int" Nullable="false" />
+    <Property Name="Enno" Type="varchar" Nullable="false" MaxLength="12" />
+    <Property Name="SUBid" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="marks" Type="varchar" Nullable="false" MaxLength="3" />
+  </EntityType>
+  <EntityType Name="subjectinformation">
+    <Key>
+      <PropertyRef Name="rowid" />
+    </Key>
+    <Property Name="rowid" Type="int" Nullable="false" />
+    <Property Name="SUBid" Type="varchar" MaxLength="10" />
+    <Property Name="SBid" Type="varchar(max)" />
+    <Property Name="subject" Type="varchar(max)" />
+    <Property Name="syallabus" Type="varchar(max)" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Smart_Scheduler.dbo.timetableinformation' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="timetableinformation">
+    <Key>
+      <PropertyRef Name="rowid" />
+    </Key>
+    <Property Name="rowid" Type="int" Nullable="false" />
+    <Property Name="Tid" Type="varchar(max)" />
+    <Property Name="Dayid" Type="varchar(max)" />
+    <Property Name="SUBid" Type="varchar" MaxLength="10" />
+    <Property Name="time" Type="varchar" MaxLength="15" />
+  </EntityType>
+</Schema>

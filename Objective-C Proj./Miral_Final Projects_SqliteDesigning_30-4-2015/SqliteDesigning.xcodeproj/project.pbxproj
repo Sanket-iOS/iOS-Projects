@@ -1,0 +1,673 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		040ED0461AC02766003D64F7 /* noticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040ED0451AC02766003D64F7 /* noticeViewController.m */; };
+		040ED0491AC02798003D64F7 /* shownoticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040ED0481AC02798003D64F7 /* shownoticeViewController.m */; };
+		045D30991AD7E75C00606971 /* placement.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 045D30981AD7E75C00606971 /* placement.jpg */; };
+		045D309E1AD7EC7400606971 /* syallbus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 045D309A1AD7EC7300606971 /* syallbus.jpg */; };
+		045D309F1AD7EC7400606971 /* note.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 045D309B1AD7EC7400606971 /* note.jpg */; };
+		045D30A01AD7EC7400606971 /* timetable.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 045D309C1AD7EC7400606971 /* timetable.jpg */; };
+		045D30A11AD7EC7400606971 /* result.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 045D309D1AD7EC7400606971 /* result.jpg */; };
+		045D30A31AD7EDBF00606971 /* notice.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 045D30A21AD7EDBF00606971 /* notice.jpg */; };
+		045D30A51AD7EE8300606971 /* hi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 045D30A41AD7EE8300606971 /* hi.jpg */; };
+		045D30A91AD7F63900606971 /* profile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 045D30A81AD7F63900606971 /* profile.jpg */; };
+		0496F6E51AB99FF700DD0D37 /* saveNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0496F6E41AB99FF700DD0D37 /* saveNoteViewController.m */; };
+		04A8DBD11AD7B9FF005B35DF /* students.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04A8DBCB1AD7B9FF005B35DF /* students.jpg */; };
+		04A8DBD31AD7BA7E005B35DF /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04A8DBD21AD7BA7E005B35DF /* 7.jpg */; };
+		04A8DBD91AD7C6B3005B35DF /* images-3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04A8DBD81AD7C6B3005B35DF /* images-3.jpg */; };
+		04A8DBDB1AD7C83C005B35DF /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04A8DBDA1AD7C83C005B35DF /* logo.jpg */; };
+		04C9E6BA1AB99C6700199F06 /* showNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C9E6B91AB99C6700199F06 /* showNotesViewController.m */; };
+		E719F94F1ACEB8B2001AB0EE /* civil engg.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E719F9411ACEB8B2001AB0EE /* civil engg.pdf */; };
+		E719F9501ACEB8B2001AB0EE /* Computer Graphics.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E719F9421ACEB8B2001AB0EE /* Computer Graphics.pdf */; };
+		E719F9511ACEB8B2001AB0EE /* DISTRIBUTED SYSTEMS.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E719F9431ACEB8B2001AB0EE /* DISTRIBUTED SYSTEMS.pdf */; };
+		E719F9521ACEB8B2001AB0EE /* EEE.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E719F9441ACEB8B2001AB0EE /* EEE.pdf */; };
+		E719F9531ACEB8B2001AB0EE /* Information Security.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E719F9451ACEB8B2001AB0EE /* Information Security.pdf */; };
+		E719F9541ACEB8B2001AB0EE /* managment-I.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E719F9461ACEB8B2001AB0EE /* managment-I.pdf */; };
+		E719F9551ACEB8B2001AB0EE /* math-4.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E719F9471ACEB8B2001AB0EE /* math-4.pdf */; };
+		E719F9561ACEB8B2001AB0EE /* math-II.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E719F9481ACEB8B2001AB0EE /* math-II.pdf */; };
+		E719F9571ACEB8B2001AB0EE /* maths-1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E719F9491ACEB8B2001AB0EE /* maths-1.pdf */; };
+		E719F9581ACEB8B2001AB0EE /* PARALLEL PROCESSING.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E719F94A1ACEB8B2001AB0EE /* PARALLEL PROCESSING.pdf */; };
+		E719F9591ACEB8B2001AB0EE /* phy.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E719F94B1ACEB8B2001AB0EE /* phy.pdf */; };
+		E719F95A1ACEB8B2001AB0EE /* Software Engineering.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E719F94C1ACEB8B2001AB0EE /* Software Engineering.pdf */; };
+		E719F95B1ACEB8B2001AB0EE /* Theory of Computation.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E719F94D1ACEB8B2001AB0EE /* Theory of Computation.pdf */; };
+		E719F95C1ACEB8B2001AB0EE /* Web Application Development.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E719F94E1ACEB8B2001AB0EE /* Web Application Development.pdf */; };
+		E73745E71ADB99B600812D24 /* smartscheduler.db in Resources */ = {isa = PBXBuildFile; fileRef = E73745E61ADB99B600812D24 /* smartscheduler.db */; };
+		E73745E91ADB9A9B00812D24 /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E73745E81ADB9A9B00812D24 /* 5.jpg */; };
+		E73745EB1ADBA73A00812D24 /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E73745EA1ADBA73A00812D24 /* 8.jpg */; };
+		E7A7226A1AA57D0B00D11F55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7A722691AA57D0B00D11F55 /* Foundation.framework */; };
+		E7A7226C1AA57D0B00D11F55 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7A7226B1AA57D0B00D11F55 /* CoreGraphics.framework */; };
+		E7A7226E1AA57D0B00D11F55 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7A7226D1AA57D0B00D11F55 /* UIKit.framework */; };
+		E7A722741AA57D0B00D11F55 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E7A722721AA57D0B00D11F55 /* InfoPlist.strings */; };
+		E7A722761AA57D0B00D11F55 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A722751AA57D0B00D11F55 /* main.m */; };
+		E7A7227A1AA57D0B00D11F55 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A722791AA57D0B00D11F55 /* AppDelegate.m */; };
+		E7A7227D1AA57D0B00D11F55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7A7227B1AA57D0B00D11F55 /* Main.storyboard */; };
+		E7A722801AA57D0B00D11F55 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A7227F1AA57D0B00D11F55 /* ViewController.m */; };
+		E7A722821AA57D0B00D11F55 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7A722811AA57D0B00D11F55 /* Images.xcassets */; };
+		E7A722891AA57D0B00D11F55 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7A722881AA57D0B00D11F55 /* XCTest.framework */; };
+		E7A7228A1AA57D0B00D11F55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7A722691AA57D0B00D11F55 /* Foundation.framework */; };
+		E7A7228B1AA57D0B00D11F55 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7A7226D1AA57D0B00D11F55 /* UIKit.framework */; };
+		E7A722931AA57D0B00D11F55 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E7A722911AA57D0B00D11F55 /* InfoPlist.strings */; };
+		E7A722951AA57D0B00D11F55 /* SqliteDesigningTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A722941AA57D0B00D11F55 /* SqliteDesigningTests.m */; };
+		E7A722A91AA58A8F00D11F55 /* profileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A722A81AA58A8F00D11F55 /* profileViewController.m */; };
+		E7A722AC1AA58CE300D11F55 /* resultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A722AB1AA58CE300D11F55 /* resultViewController.m */; };
+		E7A722AF1AA58E1300D11F55 /* DayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A722AE1AA58E1300D11F55 /* DayViewController.m */; };
+		E7A722B21AA58F0A00D11F55 /* timetableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A722B11AA58F0A00D11F55 /* timetableViewController.m */; };
+		E7A722BE1AA59BD900D11F55 /* syllabusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A722BD1AA59BD900D11F55 /* syllabusViewController.m */; };
+		E7DA3EF51AA5D0F300573986 /* optionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7DA3EF41AA5D0F300573986 /* optionViewController.m */; };
+		E7DA3EF91AA5D1FF00573986 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E7DA3EF81AA5D1FF00573986 /* libsqlite3.dylib */; };
+		E7DA3EFC1AA5D30000573986 /* DBmanger.m in Sources */ = {isa = PBXBuildFile; fileRef = E7DA3EFB1AA5D30000573986 /* DBmanger.m */; };
+		E7FD28551AC4DAD80090143D /* changeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FD28541AC4DAD80090143D /* changeViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E7A7228C1AA57D0B00D11F55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E7A7225E1AA57D0A00D11F55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E7A722651AA57D0B00D11F55;
+			remoteInfo = SqliteDesigning;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		040ED0441AC02766003D64F7 /* noticeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = noticeViewController.h; sourceTree = "<group>"; };
+		040ED0451AC02766003D64F7 /* noticeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = noticeViewController.m; sourceTree = "<group>"; };
+		040ED0471AC02798003D64F7 /* shownoticeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shownoticeViewController.h; sourceTree = "<group>"; };
+		040ED0481AC02798003D64F7 /* shownoticeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = shownoticeViewController.m; sourceTree = "<group>"; };
+		045D30981AD7E75C00606971 /* placement.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = placement.jpg; sourceTree = "<group>"; };
+		045D309A1AD7EC7300606971 /* syallbus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = syallbus.jpg; sourceTree = "<group>"; };
+		045D309B1AD7EC7400606971 /* note.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = note.jpg; sourceTree = "<group>"; };
+		045D309C1AD7EC7400606971 /* timetable.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = timetable.jpg; sourceTree = "<group>"; };
+		045D309D1AD7EC7400606971 /* result.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = result.jpg; sourceTree = "<group>"; };
+		045D30A21AD7EDBF00606971 /* notice.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = notice.jpg; sourceTree = "<group>"; };
+		045D30A41AD7EE8300606971 /* hi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hi.jpg; sourceTree = "<group>"; };
+		045D30A81AD7F63900606971 /* profile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = profile.jpg; sourceTree = "<group>"; };
+		0496F6E31AB99FF700DD0D37 /* saveNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = saveNoteViewController.h; sourceTree = "<group>"; };
+		0496F6E41AB99FF700DD0D37 /* saveNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = saveNoteViewController.m; sourceTree = "<group>"; };
+		04A8DBCB1AD7B9FF005B35DF /* students.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = students.jpg; sourceTree = "<group>"; };
+		04A8DBD21AD7BA7E005B35DF /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
+		04A8DBD81AD7C6B3005B35DF /* images-3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "images-3.jpg"; sourceTree = "<group>"; };
+		04A8DBDA1AD7C83C005B35DF /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpg; sourceTree = "<group>"; };
+		04C9E6B81AB99C6700199F06 /* showNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = showNotesViewController.h; sourceTree = "<group>"; };
+		04C9E6B91AB99C6700199F06 /* showNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = showNotesViewController.m; sourceTree = "<group>"; };
+		E719F9411ACEB8B2001AB0EE /* civil engg.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "civil engg.pdf"; sourceTree = "<group>"; };
+		E719F9421ACEB8B2001AB0EE /* Computer Graphics.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Computer Graphics.pdf"; sourceTree = "<group>"; };
+		E719F9431ACEB8B2001AB0EE /* DISTRIBUTED SYSTEMS.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "DISTRIBUTED SYSTEMS.pdf"; sourceTree = "<group>"; };
+		E719F9441ACEB8B2001AB0EE /* EEE.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = EEE.pdf; sourceTree = "<group>"; };
+		E719F9451ACEB8B2001AB0EE /* Information Security.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Information Security.pdf"; sourceTree = "<group>"; };
+		E719F9461ACEB8B2001AB0EE /* managment-I.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "managment-I.pdf"; sourceTree = "<group>"; };
+		E719F9471ACEB8B2001AB0EE /* math-4.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "math-4.pdf"; sourceTree = "<group>"; };
+		E719F9481ACEB8B2001AB0EE /* math-II.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "math-II.pdf"; sourceTree = "<group>"; };
+		E719F9491ACEB8B2001AB0EE /* maths-1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "maths-1.pdf"; sourceTree = "<group>"; };
+		E719F94A1ACEB8B2001AB0EE /* PARALLEL PROCESSING.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "PARALLEL PROCESSING.pdf"; sourceTree = "<group>"; };
+		E719F94B1ACEB8B2001AB0EE /* phy.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = phy.pdf; sourceTree = "<group>"; };
+		E719F94C1ACEB8B2001AB0EE /* Software Engineering.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Software Engineering.pdf"; sourceTree = "<group>"; };
+		E719F94D1ACEB8B2001AB0EE /* Theory of Computation.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Theory of Computation.pdf"; sourceTree = "<group>"; };
+		E719F94E1ACEB8B2001AB0EE /* Web Application Development.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Web Application Development.pdf"; sourceTree = "<group>"; };
+		E73745E61ADB99B600812D24 /* smartscheduler.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = smartscheduler.db; sourceTree = "<group>"; };
+		E73745E81ADB9A9B00812D24 /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
+		E73745EA1ADBA73A00812D24 /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpg; sourceTree = "<group>"; };
+		E7A722661AA57D0B00D11F55 /* SqliteDesigning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SqliteDesigning.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7A722691AA57D0B00D11F55 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E7A7226B1AA57D0B00D11F55 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E7A7226D1AA57D0B00D11F55 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E7A722711AA57D0B00D11F55 /* SqliteDesigning-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SqliteDesigning-Info.plist"; sourceTree = "<group>"; };
+		E7A722731AA57D0B00D11F55 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E7A722751AA57D0B00D11F55 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E7A722771AA57D0B00D11F55 /* SqliteDesigning-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SqliteDesigning-Prefix.pch"; sourceTree = "<group>"; };
+		E7A722781AA57D0B00D11F55 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E7A722791AA57D0B00D11F55 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E7A7227C1AA57D0B00D11F55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E7A7227E1AA57D0B00D11F55 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E7A7227F1AA57D0B00D11F55 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E7A722811AA57D0B00D11F55 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E7A722871AA57D0B00D11F55 /* SqliteDesigningTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SqliteDesigningTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7A722881AA57D0B00D11F55 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E7A722901AA57D0B00D11F55 /* SqliteDesigningTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SqliteDesigningTests-Info.plist"; sourceTree = "<group>"; };
+		E7A722921AA57D0B00D11F55 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E7A722941AA57D0B00D11F55 /* SqliteDesigningTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SqliteDesigningTests.m; sourceTree = "<group>"; };
+		E7A722A71AA58A8F00D11F55 /* profileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = profileViewController.h; sourceTree = "<group>"; };
+		E7A722A81AA58A8F00D11F55 /* profileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = profileViewController.m; sourceTree = "<group>"; };
+		E7A722AA1AA58CE300D11F55 /* resultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = resultViewController.h; sourceTree = "<group>"; };
+		E7A722AB1AA58CE300D11F55 /* resultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = resultViewController.m; sourceTree = "<group>"; };
+		E7A722AD1AA58E1300D11F55 /* DayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DayViewController.h; sourceTree = "<group>"; };
+		E7A722AE1AA58E1300D11F55 /* DayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DayViewController.m; sourceTree = "<group>"; };
+		E7A722B01AA58F0A00D11F55 /* timetableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timetableViewController.h; sourceTree = "<group>"; };
+		E7A722B11AA58F0A00D11F55 /* timetableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = timetableViewController.m; sourceTree = "<group>"; };
+		E7A722BC1AA59BD900D11F55 /* syllabusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = syllabusViewController.h; sourceTree = "<group>"; };
+		E7A722BD1AA59BD900D11F55 /* syllabusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = syllabusViewController.m; sourceTree = "<group>"; };
+		E7DA3EF31AA5D0F300573986 /* optionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = optionViewController.h; sourceTree = "<group>"; };
+		E7DA3EF41AA5D0F300573986 /* optionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = optionViewController.m; sourceTree = "<group>"; };
+		E7DA3EF81AA5D1FF00573986 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		E7DA3EFA1AA5D30000573986 /* DBmanger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBmanger.h; sourceTree = "<group>"; };
+		E7DA3EFB1AA5D30000573986 /* DBmanger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBmanger.m; sourceTree = "<group>"; };
+		E7FD28531AC4DAD80090143D /* changeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = changeViewController.h; sourceTree = "<group>"; };
+		E7FD28541AC4DAD80090143D /* changeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = changeViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E7A722631AA57D0B00D11F55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7DA3EF91AA5D1FF00573986 /* libsqlite3.dylib in Frameworks */,
+				E7A7226C1AA57D0B00D11F55 /* CoreGraphics.framework in Frameworks */,
+				E7A7226E1AA57D0B00D11F55 /* UIKit.framework in Frameworks */,
+				E7A7226A1AA57D0B00D11F55 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7A722841AA57D0B00D11F55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7A722891AA57D0B00D11F55 /* XCTest.framework in Frameworks */,
+				E7A7228B1AA57D0B00D11F55 /* UIKit.framework in Frameworks */,
+				E7A7228A1AA57D0B00D11F55 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E719F9401ACEB8B2001AB0EE /* pdf file */ = {
+			isa = PBXGroup;
+			children = (
+				E719F9411ACEB8B2001AB0EE /* civil engg.pdf */,
+				E719F9421ACEB8B2001AB0EE /* Computer Graphics.pdf */,
+				E719F9431ACEB8B2001AB0EE /* DISTRIBUTED SYSTEMS.pdf */,
+				E719F9441ACEB8B2001AB0EE /* EEE.pdf */,
+				E719F9451ACEB8B2001AB0EE /* Information Security.pdf */,
+				E719F9461ACEB8B2001AB0EE /* managment-I.pdf */,
+				E719F9471ACEB8B2001AB0EE /* math-4.pdf */,
+				E719F9481ACEB8B2001AB0EE /* math-II.pdf */,
+				E719F9491ACEB8B2001AB0EE /* maths-1.pdf */,
+				E719F94A1ACEB8B2001AB0EE /* PARALLEL PROCESSING.pdf */,
+				E719F94B1ACEB8B2001AB0EE /* phy.pdf */,
+				E719F94C1ACEB8B2001AB0EE /* Software Engineering.pdf */,
+				E719F94D1ACEB8B2001AB0EE /* Theory of Computation.pdf */,
+				E719F94E1ACEB8B2001AB0EE /* Web Application Development.pdf */,
+			);
+			path = "pdf file";
+			sourceTree = "<group>";
+		};
+		E7A7225D1AA57D0A00D11F55 = {
+			isa = PBXGroup;
+			children = (
+				E7A7226F1AA57D0B00D11F55 /* SqliteDesigning */,
+				E7A7228E1AA57D0B00D11F55 /* SqliteDesigningTests */,
+				E7A722681AA57D0B00D11F55 /* Frameworks */,
+				E7A722671AA57D0B00D11F55 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E7A722671AA57D0B00D11F55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E7A722661AA57D0B00D11F55 /* SqliteDesigning.app */,
+				E7A722871AA57D0B00D11F55 /* SqliteDesigningTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E7A722681AA57D0B00D11F55 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7DA3EF81AA5D1FF00573986 /* libsqlite3.dylib */,
+				E7A722691AA57D0B00D11F55 /* Foundation.framework */,
+				E7A7226B1AA57D0B00D11F55 /* CoreGraphics.framework */,
+				E7A7226D1AA57D0B00D11F55 /* UIKit.framework */,
+				E7A722881AA57D0B00D11F55 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E7A7226F1AA57D0B00D11F55 /* SqliteDesigning */ = {
+			isa = PBXGroup;
+			children = (
+				E73745EA1ADBA73A00812D24 /* 8.jpg */,
+				E73745E81ADB9A9B00812D24 /* 5.jpg */,
+				E73745E61ADB99B600812D24 /* smartscheduler.db */,
+				045D30A81AD7F63900606971 /* profile.jpg */,
+				045D30A41AD7EE8300606971 /* hi.jpg */,
+				045D30A21AD7EDBF00606971 /* notice.jpg */,
+				045D309A1AD7EC7300606971 /* syallbus.jpg */,
+				045D309B1AD7EC7400606971 /* note.jpg */,
+				045D309C1AD7EC7400606971 /* timetable.jpg */,
+				045D309D1AD7EC7400606971 /* result.jpg */,
+				045D30981AD7E75C00606971 /* placement.jpg */,
+				04A8DBDA1AD7C83C005B35DF /* logo.jpg */,
+				04A8DBD81AD7C6B3005B35DF /* images-3.jpg */,
+				04A8DBD21AD7BA7E005B35DF /* 7.jpg */,
+				04A8DBCB1AD7B9FF005B35DF /* students.jpg */,
+				E719F9401ACEB8B2001AB0EE /* pdf file */,
+				E7A722781AA57D0B00D11F55 /* AppDelegate.h */,
+				E7A722791AA57D0B00D11F55 /* AppDelegate.m */,
+				E7A7227B1AA57D0B00D11F55 /* Main.storyboard */,
+				E7A7227E1AA57D0B00D11F55 /* ViewController.h */,
+				E7A7227F1AA57D0B00D11F55 /* ViewController.m */,
+				E7DA3EF31AA5D0F300573986 /* optionViewController.h */,
+				E7DA3EF41AA5D0F300573986 /* optionViewController.m */,
+				E7A722A71AA58A8F00D11F55 /* profileViewController.h */,
+				E7A722A81AA58A8F00D11F55 /* profileViewController.m */,
+				E7A722AA1AA58CE300D11F55 /* resultViewController.h */,
+				E7A722AB1AA58CE300D11F55 /* resultViewController.m */,
+				E7A722AD1AA58E1300D11F55 /* DayViewController.h */,
+				E7A722AE1AA58E1300D11F55 /* DayViewController.m */,
+				E7A722811AA57D0B00D11F55 /* Images.xcassets */,
+				E7A722701AA57D0B00D11F55 /* Supporting Files */,
+				E7A722B01AA58F0A00D11F55 /* timetableViewController.h */,
+				E7A722B11AA58F0A00D11F55 /* timetableViewController.m */,
+				E7FD28531AC4DAD80090143D /* changeViewController.h */,
+				E7FD28541AC4DAD80090143D /* changeViewController.m */,
+				E7A722BC1AA59BD900D11F55 /* syllabusViewController.h */,
+				E7A722BD1AA59BD900D11F55 /* syllabusViewController.m */,
+				E7DA3EFA1AA5D30000573986 /* DBmanger.h */,
+				E7DA3EFB1AA5D30000573986 /* DBmanger.m */,
+				04C9E6B81AB99C6700199F06 /* showNotesViewController.h */,
+				04C9E6B91AB99C6700199F06 /* showNotesViewController.m */,
+				0496F6E31AB99FF700DD0D37 /* saveNoteViewController.h */,
+				0496F6E41AB99FF700DD0D37 /* saveNoteViewController.m */,
+				040ED0441AC02766003D64F7 /* noticeViewController.h */,
+				040ED0451AC02766003D64F7 /* noticeViewController.m */,
+				040ED0471AC02798003D64F7 /* shownoticeViewController.h */,
+				040ED0481AC02798003D64F7 /* shownoticeViewController.m */,
+			);
+			path = SqliteDesigning;
+			sourceTree = "<group>";
+		};
+		E7A722701AA57D0B00D11F55 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E7A722711AA57D0B00D11F55 /* SqliteDesigning-Info.plist */,
+				E7A722721AA57D0B00D11F55 /* InfoPlist.strings */,
+				E7A722751AA57D0B00D11F55 /* main.m */,
+				E7A722771AA57D0B00D11F55 /* SqliteDesigning-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E7A7228E1AA57D0B00D11F55 /* SqliteDesigningTests */ = {
+			isa = PBXGroup;
+			children = (
+				E7A722941AA57D0B00D11F55 /* SqliteDesigningTests.m */,
+				E7A7228F1AA57D0B00D11F55 /* Supporting Files */,
+			);
+			path = SqliteDesigningTests;
+			sourceTree = "<group>";
+		};
+		E7A7228F1AA57D0B00D11F55 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E7A722901AA57D0B00D11F55 /* SqliteDesigningTests-Info.plist */,
+				E7A722911AA57D0B00D11F55 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E7A722651AA57D0B00D11F55 /* SqliteDesigning */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7A722981AA57D0B00D11F55 /* Build configuration list for PBXNativeTarget "SqliteDesigning" */;
+			buildPhases = (
+				E7A722621AA57D0B00D11F55 /* Sources */,
+				E7A722631AA57D0B00D11F55 /* Frameworks */,
+				E7A722641AA57D0B00D11F55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SqliteDesigning;
+			productName = SqliteDesigning;
+			productReference = E7A722661AA57D0B00D11F55 /* SqliteDesigning.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E7A722861AA57D0B00D11F55 /* SqliteDesigningTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7A7229B1AA57D0B00D11F55 /* Build configuration list for PBXNativeTarget "SqliteDesigningTests" */;
+			buildPhases = (
+				E7A722831AA57D0B00D11F55 /* Sources */,
+				E7A722841AA57D0B00D11F55 /* Frameworks */,
+				E7A722851AA57D0B00D11F55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E7A7228D1AA57D0B00D11F55 /* PBXTargetDependency */,
+			);
+			name = SqliteDesigningTests;
+			productName = SqliteDesigningTests;
+			productReference = E7A722871AA57D0B00D11F55 /* SqliteDesigningTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E7A7225E1AA57D0A00D11F55 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = tops;
+				TargetAttributes = {
+					E7A722861AA57D0B00D11F55 = {
+						TestTargetID = E7A722651AA57D0B00D11F55;
+					};
+				};
+			};
+			buildConfigurationList = E7A722611AA57D0A00D11F55 /* Build configuration list for PBXProject "SqliteDesigning" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E7A7225D1AA57D0A00D11F55;
+			productRefGroup = E7A722671AA57D0B00D11F55 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E7A722651AA57D0B00D11F55 /* SqliteDesigning */,
+				E7A722861AA57D0B00D11F55 /* SqliteDesigningTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E7A722641AA57D0B00D11F55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7A722821AA57D0B00D11F55 /* Images.xcassets in Resources */,
+				045D309E1AD7EC7400606971 /* syallbus.jpg in Resources */,
+				045D30991AD7E75C00606971 /* placement.jpg in Resources */,
+				045D30A91AD7F63900606971 /* profile.jpg in Resources */,
+				04A8DBDB1AD7C83C005B35DF /* logo.jpg in Resources */,
+				E719F9541ACEB8B2001AB0EE /* managment-I.pdf in Resources */,
+				045D30A11AD7EC7400606971 /* result.jpg in Resources */,
+				E719F95B1ACEB8B2001AB0EE /* Theory of Computation.pdf in Resources */,
+				E7A722741AA57D0B00D11F55 /* InfoPlist.strings in Resources */,
+				E73745E91ADB9A9B00812D24 /* 5.jpg in Resources */,
+				045D30A31AD7EDBF00606971 /* notice.jpg in Resources */,
+				E719F9511ACEB8B2001AB0EE /* DISTRIBUTED SYSTEMS.pdf in Resources */,
+				E73745EB1ADBA73A00812D24 /* 8.jpg in Resources */,
+				E719F9571ACEB8B2001AB0EE /* maths-1.pdf in Resources */,
+				E719F9521ACEB8B2001AB0EE /* EEE.pdf in Resources */,
+				E7A7227D1AA57D0B00D11F55 /* Main.storyboard in Resources */,
+				E719F9581ACEB8B2001AB0EE /* PARALLEL PROCESSING.pdf in Resources */,
+				045D30A01AD7EC7400606971 /* timetable.jpg in Resources */,
+				E719F9501ACEB8B2001AB0EE /* Computer Graphics.pdf in Resources */,
+				E719F94F1ACEB8B2001AB0EE /* civil engg.pdf in Resources */,
+				E719F95A1ACEB8B2001AB0EE /* Software Engineering.pdf in Resources */,
+				E73745E71ADB99B600812D24 /* smartscheduler.db in Resources */,
+				E719F9591ACEB8B2001AB0EE /* phy.pdf in Resources */,
+				E719F95C1ACEB8B2001AB0EE /* Web Application Development.pdf in Resources */,
+				04A8DBD91AD7C6B3005B35DF /* images-3.jpg in Resources */,
+				045D30A51AD7EE8300606971 /* hi.jpg in Resources */,
+				04A8DBD11AD7B9FF005B35DF /* students.jpg in Resources */,
+				E719F9551ACEB8B2001AB0EE /* math-4.pdf in Resources */,
+				E719F9561ACEB8B2001AB0EE /* math-II.pdf in Resources */,
+				04A8DBD31AD7BA7E005B35DF /* 7.jpg in Resources */,
+				E719F9531ACEB8B2001AB0EE /* Information Security.pdf in Resources */,
+				045D309F1AD7EC7400606971 /* note.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7A722851AA57D0B00D11F55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7A722931AA57D0B00D11F55 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E7A722621AA57D0B00D11F55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				040ED0491AC02798003D64F7 /* shownoticeViewController.m in Sources */,
+				E7A722801AA57D0B00D11F55 /* ViewController.m in Sources */,
+				E7FD28551AC4DAD80090143D /* changeViewController.m in Sources */,
+				0496F6E51AB99FF700DD0D37 /* saveNoteViewController.m in Sources */,
+				040ED0461AC02766003D64F7 /* noticeViewController.m in Sources */,
+				04C9E6BA1AB99C6700199F06 /* showNotesViewController.m in Sources */,
+				E7DA3EF51AA5D0F300573986 /* optionViewController.m in Sources */,
+				E7A722A91AA58A8F00D11F55 /* profileViewController.m in Sources */,
+				E7A722B21AA58F0A00D11F55 /* timetableViewController.m in Sources */,
+				E7A722AF1AA58E1300D11F55 /* DayViewController.m in Sources */,
+				E7A722AC1AA58CE300D11F55 /* resultViewController.m in Sources */,
+				E7DA3EFC1AA5D30000573986 /* DBmanger.m in Sources */,
+				E7A7227A1AA57D0B00D11F55 /* AppDelegate.m in Sources */,
+				E7A722BE1AA59BD900D11F55 /* syllabusViewController.m in Sources */,
+				E7A722761AA57D0B00D11F55 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7A722831AA57D0B00D11F55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7A722951AA57D0B00D11F55 /* SqliteDesigningTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E7A7228D1AA57D0B00D11F55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E7A722651AA57D0B00D11F55 /* SqliteDesigning */;
+			targetProxy = E7A7228C1AA57D0B00D11F55 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E7A722721AA57D0B00D11F55 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E7A722731AA57D0B00D11F55 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E7A7227B1AA57D0B00D11F55 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E7A7227C1AA57D0B00D11F55 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E7A722911AA57D0B00D11F55 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E7A722921AA57D0B00D11F55 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E7A722961AA57D0B00D11F55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E7A722971AA57D0B00D11F55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E7A722991AA57D0B00D11F55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SqliteDesigning/SqliteDesigning-Prefix.pch";
+				INFOPLIST_FILE = "SqliteDesigning/SqliteDesigning-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E7A7229A1AA57D0B00D11F55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SqliteDesigning/SqliteDesigning-Prefix.pch";
+				INFOPLIST_FILE = "SqliteDesigning/SqliteDesigning-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E7A7229C1AA57D0B00D11F55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SqliteDesigning.app/SqliteDesigning";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SqliteDesigning/SqliteDesigning-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SqliteDesigningTests/SqliteDesigningTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		E7A7229D1AA57D0B00D11F55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SqliteDesigning.app/SqliteDesigning";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SqliteDesigning/SqliteDesigning-Prefix.pch";
+				INFOPLIST_FILE = "SqliteDesigningTests/SqliteDesigningTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E7A722611AA57D0A00D11F55 /* Build configuration list for PBXProject "SqliteDesigning" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7A722961AA57D0B00D11F55 /* Debug */,
+				E7A722971AA57D0B00D11F55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7A722981AA57D0B00D11F55 /* Build configuration list for PBXNativeTarget "SqliteDesigning" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7A722991AA57D0B00D11F55 /* Debug */,
+				E7A7229A1AA57D0B00D11F55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7A7229B1AA57D0B00D11F55 /* Build configuration list for PBXNativeTarget "SqliteDesigningTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7A7229C1AA57D0B00D11F55 /* Debug */,
+				E7A7229D1AA57D0B00D11F55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E7A7225E1AA57D0A00D11F55 /* Project object */;
+}

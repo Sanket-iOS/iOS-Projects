@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Smart_SchedulerModelStoreContainer" CdmEntityContainer="Smart_SchedulerEntities">
+    <EntitySetMapping Name="branchIDs">
+      <EntityTypeMapping TypeName="Smart_SchedulerModel.branchID">
+        <MappingFragment StoreEntitySet="branchID">
+          <ScalarProperty Name="rowid" ColumnName="rowid" />
+          <ScalarProperty Name="bname" ColumnName="bname" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="holidayinformations">
+      <EntityTypeMapping TypeName="Smart_SchedulerModel.holidayinformation">
+        <MappingFragment StoreEntitySet="holidayinformation">
+          <ScalarProperty Name="serial" ColumnName="serial" />
+          <ScalarProperty Name="holiday" ColumnName="holiday" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="day" ColumnName="day" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="notesinformations">
+      <EntityTypeMapping TypeName="Smart_SchedulerModel.notesinformation">
+        <MappingFragment StoreEntitySet="notesinformation">
+          <ScalarProperty Name="rowid" ColumnName="rowid" />
+          <ScalarProperty Name="Enno" ColumnName="Enno" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="notes" ColumnName="notes" />
+          <ScalarProperty Name="date" ColumnName="date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="noticeinformations">
+      <EntityTypeMapping TypeName="Smart_SchedulerModel.noticeinformation">
+        <MappingFragment StoreEntitySet="noticeinformation">
+          <ScalarProperty Name="rowid" ColumnName="rowid" />
+          <ScalarProperty Name="Noticeid" ColumnName="Noticeid" />
+          <ScalarProperty Name="SBid" ColumnName="SBid" />
+          <ScalarProperty Name="noticetitle" ColumnName="noticetitle" />
+          <ScalarProperty Name="noticedetails" ColumnName="noticedetails" />
+          <ScalarProperty Name="date" ColumnName="date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="placementinformations">
+      <EntityTypeMapping TypeName="Smart_SchedulerModel.placementinformation">
+        <MappingFragment StoreEntitySet="placementinformation">
+          <ScalarProperty Name="rowid" ColumnName="rowid" />
+          <ScalarProperty Name="SBid" ColumnName="SBid" />
+          <ScalarProperty Name="notes" ColumnName="notes" />
+          <ScalarProperty Name="Placement_title" ColumnName="Placement_title" />
+          <ScalarProperty Name="date" ColumnName="date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="profileinformations">
+      <EntityTypeMapping TypeName="Smart_SchedulerModel.profileinformation">
+        <MappingFragment StoreEntitySet="profileinformation">
+          <ScalarProperty Name="rowid" ColumnName="rowid" />
+          <ScalarProperty Name="Enno" ColumnName="Enno" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="semester" ColumnName="semester" />
+          <ScalarProperty Name="branch" ColumnName="branch" />
+          <ScalarProperty Name="mobile" ColumnName="mobile" />
+          <ScalarProperty Name="Emailid" ColumnName="Emailid" />
+          <ScalarProperty Name="password" ColumnName="password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="resultinformations">
+      <EntityTypeMapping TypeName="Smart_SchedulerModel.resultinformation">
+        <MappingFragment StoreEntitySet="resultinformation">
+          <ScalarProperty Name="rowid" ColumnName="rowid" />
+          <ScalarProperty Name="Enno" ColumnName="Enno" />
+          <ScalarProperty Name="SUBid" ColumnName="SUBid" />
+          <ScalarProperty Name="marks" ColumnName="marks" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="subjectinformations">
+      <EntityTypeMapping TypeName="Smart_SchedulerModel.subjectinformation">
+        <MappingFragment StoreEntitySet="subjectinformation">
+          <ScalarProperty Name="rowid" ColumnName="rowid" />
+          <ScalarProperty Name="SUBid" ColumnName="SUBid" />
+          <ScalarProperty Name="SBid" ColumnName="SBid" />
+          <ScalarProperty Name="subject" ColumnName="subject" />
+          <ScalarProperty Name="syallabus" ColumnName="syallabus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="timetableinformations">
+      <EntityTypeMapping TypeName="Smart_SchedulerModel.timetableinformation">
+        <MappingFragment StoreEntitySet="timetableinformation">
+          <ScalarProperty Name="rowid" ColumnName="rowid" />
+          <ScalarProperty Name="Tid" ColumnName="Tid" />
+          <ScalarProperty Name="Dayid" ColumnName="Dayid" />
+          <ScalarProperty Name="SUBid" ColumnName="SUBid" />
+          <ScalarProperty Name="time" ColumnName="time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

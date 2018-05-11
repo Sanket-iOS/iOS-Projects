@@ -1,0 +1,205 @@
+	
+					VikasSar_Batch			
+	
+					Iphone Module1
+	
+					Disha Hingrajiya
+	
+				Practical Code:-706192789611
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+					*SECTION-I*
+[1]=>
+create table tblDept
+(
+Dept_No int primary key ,
+Dname varchar(20),
+Loc varchar(20)
+)
+
+insert into tblDept values(10,'Accounting','NewYork');
+insert into tblDept values(20,'Reserch','dallas');
+insert into tblDept values(30,'sales','chicago');
+insert into tblDept values(40,'operation','boston');
+
+
+create table tblEmp
+(
+EmpNo int primary key ,
+Ename varchar(20),
+Job varchar(20),
+Mgr int,
+HireDate datetime,
+sal money,
+Comm int,
+DeptNo int references tblDept(Dept_No)
+)
+
+insert into tblEmp values(7369,'Smith','Clerk',7902,17-dec-80,800,NULL,20)
+insert into tblEmp values(7499,'Allen','SalesMan',7698,20-feb-81,1600,300,20)
+insert into tblEmp values(7521,'Ward','Salesman',7698,22-feb-81,2975,500,30)
+insert into tblEmp values(7566,'jones','Manager',7839,02-apr-81,2975,NULL,20)
+insert into tblEmp values(7654,'Martin',''Salesman',7698,28-sep-81,1250,1400,30)
+insert into tblEmp values(7782,'Clark','Manager',7839,0--jun-81,2450,NULL,10)
+insert into tblEmp values(7788,'Scott','Anylyst',7566,19-nov-81,5000,NULL,20)
+insert into tblEmp values(7839,'King','president',NULL,17-Nov-81,5000,NULL,10)
+insert into tblEmp values(7844,'Turner','salesman',7698,08-sep-81,1500,NULL,30)
+insert into tblEmp values(7876,'Adams','Clerk',7788,23-may-87,1100,NULL,20)
+[2]=>
+
+select upper(Ename),upper(Job) from tblEmp
+
+[3]=>
+
+select Ename+Job as Combine_Columan from tblEmp
+
+[4]=>
+
+[5]=>
+select Dname from tblDept where not in(select Dname from tblDept where Dept_No=tblEmp.Deptno)
+right outer join tblEmp
+on tblDept.Dept_No=tblEmp.DeptNo
+
+[6]=>
+select EmpNo,Ename,Job,Sal,Dname,Comm from tblDept inner join tblEmp on tblDept.Dept_No=tblEmp.DeptNo
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+				*SECTION-II*
+[1]=>
+select Ename from tblEmp where between '01-Dec-80' and '31-Feb-81'
+
+[2]=>
+
+select Ename from tblEmp where Ename like '%[r]%'
+
+[3]=>
+create trigger UpdatePos
+on tblEmp
+for  after inserted,after updated,after deleted
+print 'DMl Operation Performed!!'
+
+[4]=>
+
+select Max(sal) as Second_Highest_Sal from tblEmp where sal not in(select Max(sal) from tblEmp)
+
+[5]=>
+create indexer NameLoc
+on tblDept
+for Dname,Loc
+
+[6]=>
+
+select Count(*) as CountableRecord_Dept from tblDept
+
+[7]=>
+
+select Max(sal) as Highest_Sal from tblEmp
+
+[8]=>
+
+Enum color
+{
+red,green,blue,black
+}
+
+[10]=>
+
+[NSDictionary ]
+NSDictionary dic=[[NSDictionary alloc]initwithobjectandkeys:@"disha":@"Name",@"keshod":@"city",nil];
+Nslog(@"%@",[dic allkeys]);
+NSLog(@"%@",[dic allvalues]);
+NSLog(@"%@",[dic objectforkeys:@"Name"]);
+NSLog(@"%li",[dic count]);
+
+[NSMutableDictionary]
+NSDictionary mdic=[[NsmutableDictionary alloc]initwithobjectandkeys:@"isha":@"Name",@"Bhanvad":@"city",nil];
+[mdic setobject:@"Dentist" forkeys:@"Occupation"];
+[mdic removeobjectforkeys:@"Name"];
+NSLog(@"%@",[mdic objectforkeys:@"Name"]);
+NSLog(@"%li",[mdic count]);
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+				*SECTION-III*
+
+[1]=>
+
+[Nsarray]
+NSArray *arr=[NSArray arraywithobject:@"Iphone",@"Android",@"net",@"php"];
+NSArray *arr1=[[NSArray alloc]initwithobject:@"keshod",@"junagdha",@"Rajkot",@"Ahemdabad",nil];
+Nsstring str=[arr firstobject];
+Nslog(@"%@",[arr currentobject]);
+Nslog(@"%@",[arr1 objectatindex]);
+ 
+[NSmutableArray]
+NSMutablearray *marr=[[NSMutableArray alloc]initwithobject:@"keshod",@"junagdha",@"Rajkot",@"Ahemdabad",nil];
+[marr addobject:@"Surat"];
+[marr insertobject:@"Bhanvad" atIndex:3];
+[marr objectatIndex:4];
+[marr removeobjectatindex:2];
+
+[2]=>
+
+int a=[NSNumber numberwithint:10];
+int b=[NSNumber numberwithfloat:10.2];
+NSInteger x=[a intvalue];
+NSInteger y=[b floatvalue];
+NSLog(@"%li,%li",x,y);
+
+[3]=>
+
+@itnterface Student:NsObject
+-(void)sum:(int)a value2:(int)b;
+@implementation Student
+-(void)sum:(int)a value2:(int)b
+{
+NSLog(@"%d",a);
+NSLog(@"%d",b);
+NSLog(@"%d",a+b);
+}
+@interface Technologies :NSObject
+-(void)mul:(float)x value2:(float)y;
+@implemenation Technologies
+-(void)mul:(float)x value2:(float)y
+{
+NSLog(@"%d",x);
+NSLog(@"%d",y);
+NSLog(@"%d",x+y);
+}
+
+[4]=>
+[Nsstring]
+NSString *str=[[NSString alloc]initwithFormat:@"Tops Technologies"];
+
+[NSMutableString]
+NSMutableString *mstr=[[NSMutableString alloc]initwithFormat:@"Tops Technologies"];
+[mstr inserting:@"is best" atindex:5];
+NSMutableString *mstr1=[mstr stringbyAppendingString:@" Of  Disha Patel is Student"];
+[mstr1 charecterAtIndex:6];
+
+[5]=>
+
+NSString *str=NSHomeDirectory();
+NSString *Strdocum=[[str StringbyAppendingPathComponent:@"Document"]StringbyAppendingpathComponent:@"MyFile.txt
+"];
+NSFileManager *filem=[[NSFileManager alloc]init];
+if(filem FileExistsAtPath:Strdocum)
+	{
+	NSLog(@"File is Existed");
+	}
+else
+	{
+	NSLog(@"File not Founded");
+	}	
+NSString *strPath=[NSBundle mainBundelResourcesAtFile:@"MyFile" ofType:@"txt"];
+NSData *data=[NSData Datawithstring:strPath];
+NSString *Contents=[film ContentAtPath:data];
+NSLog(@"%@",Contents);
+
+[6]=>
+NSString *m1=@"Nokia";
+NSString *m2=@"Samsung";
+NSString *m3=@"Apple";
+NSString *m4=@"Xolo";
+NSArray *arr=[[NSArray alloc]initwithObject:m1,m2,m3,m4,nil];
+
